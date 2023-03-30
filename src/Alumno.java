@@ -4,7 +4,7 @@ import java.util.List;
 public class Alumno {
     String nombre;
     String legajo;
-    List<Materia> materiasAprobadas;
+    ArrayList<Materia> materiasAprobadas;
     public Alumno(String nombre, String legajo) {
         this.nombre = nombre;
         this.legajo = legajo;

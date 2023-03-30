@@ -5,9 +5,13 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+//        Scanner scanner = new Scanner(System.in);
+//        String s = scanner.nextLine();
 
         List<Materia> materias = new ArrayList<>();
 
@@ -74,7 +78,6 @@ public class Main {
 
         List<Inscripcion> inscripciones = cargarInscripciones(materias, alumnos);
 
-
     }
 
     public static List<Inscripcion> cargarInscripciones(List<Materia> materias, List<Alumno> alumnos) {
@@ -121,7 +124,7 @@ public class Main {
             }
 
         } catch (IOException e) {
-
+            System.out.println("Error leyendo el archivo");
         }
         return inscripciones;
     }
